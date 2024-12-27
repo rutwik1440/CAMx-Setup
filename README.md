@@ -7,16 +7,23 @@ This documentation outlines the step-by-step process for setting up CAMx (Compre
 Before proceeding with the installations, ensure the following are available on your system:
 
 ### System Requirements
-- **Compiler**: GCC (recommended version >= 9.x)
-- **Libraries**: NetCDF, MPI
 - **Docker**
 
+    Steps to set up docker 
+    ```bash
+        docker pull rutwik1440/wrfcamx:latest
+        docker run -it rutwik1440/wrfcamx:latest /bin/bash
+    ```
+    
+This will start a new container and open an interactive shell (/bin/bash).
 ## 2. CAMx Installation
 
 ### Step 1: Download CAMx Source Code
 1. Visit the official CAMx website: [https://camx.com](https://camx.com).
 2. Download the latest release of CAMx.
 3. Extract the downloaded archive:
+4. docker pull rutwik1440/wrfcamx:latest
+    docker run -it rutwik1440/wrfcamx:latest /bin/bash
 
     ```bash
     tar -xzvf camx_vX.X.tar.gz
