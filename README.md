@@ -2,6 +2,8 @@
 
 This documentation outlines the step-by-step process for setting up CAMx (Comprehensive Air Quality Model with Extensions) and its supporting software: wrfcamx, mozart2camx, TUV, and o3map.
 
+Link to the Documentation [(Link)](https://docs.google.com/document/d/18LjrqF9l3puvmGLK7n18_vU0Ozy5BMmVmj8eRSPRduE/edit?tab=t.0)
+
 ## 1. Prerequisites
 
 Before proceeding with the installations, ensure the following are available on your system:
