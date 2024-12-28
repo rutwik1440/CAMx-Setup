@@ -32,6 +32,9 @@ This will start a new container and open an interactive shell (/bin/bash).
     cd camx_vX.X
     ```
 
+### Step 2: Preparing inputs
+1. Inputs for the camx will be all the outputs obtained from below 4 softwares and emission data, and specific version inputs which can be obtained from. https://www.camx.com/download/source/
+
 ## 3. wrfcamx Installation
 
 ### Step 1: Clone wrfcamx Repository
@@ -44,7 +47,11 @@ This will start a new container and open an interactive shell (/bin/bash).
     cd wrfcamx/src
     ```
 
-### Step 2: Build wrfcamx
+### Step 2: Preparing inputs
+1. Inputs for this will be outputs obtained from wrf model. 
+
+
+### Step 3: Build wrfcamx
 1. Modify the `Makefile` to match your environment settings for NetCDF, MPI, and compilers.
 2. Build the wrfcamx executable:
 
@@ -71,7 +78,11 @@ This will start a new container and open an interactive shell (/bin/bash).
     cd mozart2camx_v4.2/src
     ```
 
-### Step 2: Build mozart2camx
+### Step 2: Preparing inputs
+1. Get initial and boundary conditions for region in format of NetCDF file. And save it in inputs folder
+
+
+### Step 3: Build mozart2camx
 1. Update the `Makefile` to include the correct NetCDF paths.
 2. Compile the software:
 
@@ -98,7 +109,10 @@ This will start a new container and open an interactive shell (/bin/bash).
     cd tuv4.8.camx7.30/src
     ```
 
-### Step 2: Configure and Build
+### Step 2: Preparing Inputs
+1. Input for TUV will be outputs produced from o3map. 
+
+### Step 3: Configure and Build
 1. Update environment variables for compilers and libraries.
 2. Compile TUV:
 
@@ -125,7 +139,11 @@ This will start a new container and open an interactive shell (/bin/bash).
     cd o3map/src
     ```
 
-### Step 2: Build o3map
+### Step 2: Preparing inputs
+1. Inputs for o3maps ozone column data in txt format. Which can be downloaded from Ozone NASA website. Save the data in ozone_input_data folder.
+
+
+### Step 3: Build o3map
 1. Set the environment variables for NetCDF and compilers.
 2. Compile the software:
 
